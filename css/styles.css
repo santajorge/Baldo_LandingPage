@@ -42,7 +42,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   transition: color 0.3s ease;
-  margin-left: 1rem; /* Espacio entre links */
+  margin-left: 1rem; 
   margin-right: 1rem;
 }
 
@@ -52,8 +52,8 @@ body {
 
 /* Botón destacado en navbar */
 .btn-contacto {
-  background-color: #75d55c;
-  color: white !important;
+  background-color: #0f9fa7;
+  color: #000;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   padding: 6px 16px;
@@ -62,7 +62,7 @@ body {
 }
 
 .btn-contacto:hover {
-  background-color: #8fa53e;
+  background-color: #75d55c;
   color: #fff;
 }
 
