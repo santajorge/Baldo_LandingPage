@@ -132,6 +132,7 @@ body {
 #sobremi h2,
 #consultas h2,
 #faq h2,
+#membresias h2,
 #contacto h2 {
   color: #000;
   font-weight: 700;
@@ -171,7 +172,7 @@ body {
 }
 
 
-/* Cards */
+/* Consultas */
 
 .card-consulta {
   display: flex;
@@ -229,7 +230,7 @@ body {
   object-fit: contain;
 }
 
-/* Botones generales */
+  /* Botones generales */
 .btn-success {
   background-color: #75d55c;
   border: none;
@@ -277,16 +278,42 @@ body {
   border-bottom-right-radius: 10px;
 }
 
+/* Membresias */
+
+.text-acento {
+  color: #00a8a3;
+}
+
+.card-membresia {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.icono-circle {
+  background-color: #d3f4e4;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-acento {
+  background-color: #00a8a3;
+  color: #fff;
+  border: none;
+}
+
+.btn-acento:hover {
+  background-color: #008c88;
+}
 
 /* Contacto */
-
-#contacto .row {
-  gap: 1rem; /* reduce el aire entre texto e imagen */
-}
-
-#contacto .col-md-6:first-child {
-  max-width: 520px;
-}
 
 .bg-contacto {
   color: #000;
@@ -312,23 +339,37 @@ body {
 }
 
 .btn-contacto {
-  background-color: #0f9fa7;
-  color: #fff;
   font-weight: 600;
   padding: 10px 24px;
   border: none;
   border-radius: 8px;
-  transition: background 0.3s ease;
   text-decoration: none;
+  background-color: #00B5D9;
+  color: white;
+  transition: background-color 0.3s ease;
 }
 
-.btn-primary:hover {
-  background-color: #0d8d96;
+.btn-contacto:hover {
+  background-color: #00A36C; /* Verde acento */
+  color: white;
+  border: 1px solid #00B5D9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .icono-contacto {
-  width: 28px;
-  height: 28px;
+  width: 2rem;
+  height: 2rem;
+}
+
+.contacto-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contacto-link:hover {
+  color: #0f9fa7; /* color principal */
 }
 
 #contacto .btn-outline-light:hover {
@@ -339,61 +380,60 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #fff;
-  border-top: 2px solid #75d55c;
-  font-size: 15px;
+  background-color: #000;
+  color: white;
+  font-size: 0.95rem;
 }
 
 .footer-logo {
-  max-width: 80px;
+  width: 6rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: nowrap; /* evita que los links se vayan a una segunda línea */
+  justify-content: center;
+  gap: 1.5rem; /* o el que prefieras */
+  flex-wrap: wrap; /* si hay poco espacio en mobile */
 }
 
 .footer-link {
-  color: #000;
+  color: white;
   text-decoration: none;
+  transition: color 0.3s;
   font-weight: 500;
 }
 
 .footer-link:hover {
-  color: #0f9fa7;
-}
-
-.footer-bottom {
-  background-color: #0f9fa7;
-  color: #fff;
-  border: 1px solid #008b8b;
-}
-
-.footer-item {
-  background-color: #00a6a6;
-  border: 1px solid #005f5f;
-  padding: 8px 16px;
-  border-radius: 8px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer-icon {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
+  color: #75d55c;
 }
 
 .btn-ir-arriba {
-  background-color: #0f9fa7;
-  color: #fff;
-  border-radius: 50%;
-  padding: 10px 14px;
-  display: inline-block;
-  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #75d55c;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
   text-decoration: none;
-  transition: background 0.3s ease;
 }
 
 .btn-ir-arriba:hover {
-  background-color: #0d8d96;
+  background-color: #75d55c;
+  color: #000;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 0.5rem;
+}
+
+.footer i {
+  font-size: 1rem;
+  color: #75d55c;
 }
 
 /* Animaciones */
@@ -411,3 +451,4 @@ img,
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
+
