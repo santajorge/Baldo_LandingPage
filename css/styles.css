@@ -9,13 +9,20 @@ body {
   scroll-behavior: smooth;
 }
 
+h2 { 
+  color: #000;
+  font-size: 32px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
 .titulo-con-linea {
   position: relative;
   display: inline-block;
   padding-bottom: 8px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: #0f9fa7;
 }
 
 .titulo-con-linea::after {
@@ -83,8 +90,8 @@ body {
 #hero {
   color: white;
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 #hero h1 {
@@ -114,8 +121,8 @@ body {
 .img-frame-custom {
   border: 6px solid #000;
   overflow: hidden;
-  width: 400px;
-  height: 440px;
+  width: 26rem;
+  height: 26rem;
   border-radius: 120px 120px 120px 30px;
 }
 
@@ -127,21 +134,24 @@ body {
   transition: transform 0.3s ease;
 }
 
+  /* Hero Responsive */
 
-/* Sobre Mí */
-#sobremi h2,
-#consultas h2,
-#faq h2,
-#membresias h2,
-#contacto h2 {
-  color: #000;
-  font-weight: 700;
-  font-size: 32px;
-  text-align: center;
-  position: relative;
-  margin-bottom: 1rem;
+  @media (max-width: 992px) {
+    #hero .btn {
+    margin-bottom: 1.5rem;
+  }
+
+    .img-frame-custom {
+  border: 6px solid #000;
+  overflow: hidden;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 120px 120px 120px 30px;
+  }  
+  
 }
 
+/* Sobre Mí */
 #sobremi ul {
   list-style-type: disc;
   padding-left: 1rem;
