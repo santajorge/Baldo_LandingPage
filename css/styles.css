@@ -185,6 +185,7 @@
     
     /* Sobre Mí FIXES */
     #sobremi {
+      scroll-margin-top: 80px;
       padding: 4rem 0;
       background: rgba(255, 255, 255, 0.8);
       border-radius: 20px;
@@ -224,6 +225,7 @@
     
     /* Consultas FIXES - CARDS IGUALES */
     #consultas {
+      scroll-margin-top: 80px;
       padding: 4rem 0;
       max-width: 1200px; /* Más adecuado para notebooks */
       margin: 0 auto;
@@ -308,6 +310,7 @@
     
     /* FAQ FIXES */
     #faq {
+      scroll-margin-top: 80px; /* Ajusta este valor a la altura de tu navbar */
       padding: 4rem 0;
       background: rgba(255, 255, 255, 0.8);
       border-radius: 20px;
@@ -354,6 +357,7 @@
     
     /* Contacto FIXES */
     #contacto {
+      scroll-margin-top: 80px;
       padding: 4rem 0;
       position: relative;
     }
